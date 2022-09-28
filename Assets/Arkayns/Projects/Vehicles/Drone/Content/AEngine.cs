@@ -13,10 +13,15 @@ namespace Arkayns.Projects.Vehicles.Drone {
         } // InitEngine
 
         public void UpdateEngine(Rigidbody rb, ADroneInput input, sbyte engines) {
-            // Debug.Log($"Running Engine: [{this.gameObject.name}]");
+            var upVector = transform.up;
+            upVector.x = 0f;
+            upVector.z = 0f;
+
+            var diff = 1 - upVector.magnitude;
+            var finalDiff = Physics.gravity.magnitude * diff;
             
-            Vector3 engineForce = Vector3.zero;
-            engineForce = transform.up * ((rb.mass * Physics.gravity.magnitude) + (input.Throttle * m_maxPower)) / engines;
+            var engineForce = Vector3.zero;
+            engineForce = transform.up * ((rb.mass * Physics.gravity.magnitude + finalDiff) + (input.Throttle * m_maxPower)) / engines;
             rb.AddForce(engineForce, ForceMode.Force);
         } // UpdateEngine
         
