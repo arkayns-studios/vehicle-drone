@@ -153,7 +153,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1383397462}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &186001997
 MonoBehaviour:
@@ -168,6 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_maxPower: 4
+  propeller: {fileID: 725277926}
+  propRotationSpeed: 300
 --- !u!65 &186001998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -214,6 +216,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc3ac7c2204d834a8448e604f735492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invertCyclic: 1
+  invertPedal: 1
+  invertThrottle: 1
 --- !u!114 &232453686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +282,7 @@ MonoBehaviour:
   m_minMaxPitch: 30
   m_minMaxRoll: 30
   m_yawPower: 4
+  m_lerpSpeed: 2
 --- !u!114 &232453689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,6 +684,11 @@ Transform:
   m_Father: {fileID: 1478728580}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &725277926 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400018, guid: cae7bd101fff4ff4d8ecdaef191105c6, type: 3}
+  m_PrefabInstance: {fileID: 508366583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &776426285
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +719,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1383397462}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &776426287
 MonoBehaviour:
@@ -723,6 +734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_maxPower: 4
+  propeller: {fileID: 810457453}
+  propRotationSpeed: 300
 --- !u!65 &776426288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -736,6 +749,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.08, z: 0.04}
   m_Center: {x: 0.0015, y: 0.007, z: 0.0015}
+--- !u!4 &810457453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400020, guid: cae7bd101fff4ff4d8ecdaef191105c6, type: 3}
+  m_PrefabInstance: {fileID: 508366583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +1021,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_maxPower: 4
+  propeller: {fileID: 1242289587}
+  propRotationSpeed: 300
 --- !u!65 &1084669044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1016,6 +1036,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.08, z: 0.04}
   m_Center: {x: 0.0015, y: 0.007, z: 0.0015}
+--- !u!4 &1242289587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400022, guid: cae7bd101fff4ff4d8ecdaef191105c6, type: 3}
+  m_PrefabInstance: {fileID: 508366583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1383397461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,8 +1069,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2054796215}
-  - {fileID: 776426286}
   - {fileID: 186001996}
+  - {fileID: 776426286}
   - {fileID: 1084669042}
   m_Father: {fileID: 232453687}
   m_RootOrder: 1
@@ -1178,6 +1203,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1928238733 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400016, guid: cae7bd101fff4ff4d8ecdaef191105c6, type: 3}
+  m_PrefabInstance: {fileID: 508366583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1965372990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,6 +1286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_maxPower: 4
+  propeller: {fileID: 1928238733}
+  propRotationSpeed: 300
 --- !u!65 &2054796217
 BoxCollider:
   m_ObjectHideFlags: 0
