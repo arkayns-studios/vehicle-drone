@@ -10,14 +10,13 @@ namespace Arkayns.Projects.Vehicles.Drone {
         public bool isWeightPounds;
         private const float LbsToKg = 0.454f;
         
-        private Rigidbody m_rb;
+        protected Rigidbody m_rb;
         protected float StartDrag;
         protected float StartAngularDrag;
         
         private void Awake() {
             m_rb = GetComponent<Rigidbody>();
             if (!m_rb) return;
-            
             if (isWeightPounds) m_rb.mass = m_weight * LbsToKg;
             StartDrag = m_rb.drag;
             StartAngularDrag = m_rb.angularDrag;
@@ -28,10 +27,8 @@ namespace Arkayns.Projects.Vehicles.Drone {
             HandlePhysics();
         } // FixedUpdate
 
-        protected void HandlePhysics() {
-            
-        } // HandlePhysics
+        protected virtual void HandlePhysics() { } // HandlePhysics
         
     } // Class ABaseRigidbody
     
-}  // Namespace Arkayns Projects Vehicles
+} // Namespace Arkayns Projects Vehicles
