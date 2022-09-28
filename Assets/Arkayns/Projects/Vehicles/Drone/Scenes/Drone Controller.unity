@@ -274,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_weight: 1
   isWeightPounds: 1
-  m_minMaxPitxh: 30
+  m_minMaxPitch: 30
   m_minMaxRoll: 30
   m_yawPower: 4
 --- !u!114 &232453689
@@ -813,8 +813,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.04412111, y: -0.8871543, z: 0.086772814, w: 0.45108885}
-  m_LocalPosition: {x: 1.6545838, y: 0.80612785, z: 1.2233986}
+  m_LocalRotation: {x: 0.000000026077034, y: -0.00000005960465, z: 0.000000011175872, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1122,19 +1122,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100014, guid: cae7bd101fff4ff4d8ecdaef191105c6, type: 3}
   m_PrefabInstance: {fileID: 508366583}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &1766617783
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766617782}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.09402939
-  m_Center: {x: 0, y: 0.09461452, z: -0.0035285875}
 --- !u!65 &1766617784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1148,6 +1135,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.17363167, y: 0.0976688, z: 0.22214264}
   m_Center: {x: 0, y: 0.048790663, z: 0.011619788}
+--- !u!135 &1766617786
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766617782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.09402939
+  m_Center: {x: 0, y: 0.09461452, z: -0.0035285875}
 --- !u!1 &1836192568
 GameObject:
   m_ObjectHideFlags: 0
